@@ -5,9 +5,9 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
+    --primary: #1FC1B8;
     --primaryLight: #ffd675;
-    --secondary: #001f3f;
+    --secondary: #002649;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -50,41 +50,39 @@
     color: var(--bodyTextColor);
     text-align: inherit;
   }
-  .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    background-color: var(--primary);
-    width: auto;
-    padding: 0 1.875rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 3.125em;
-    font-weight: bold;
-    color: #000;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
+  .cs-button-10 {
     text-align: center;
-  }
-  .cs-button-solid:hover {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 8vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    min-width: 10.875rem;
+    margin: auto;
     color: #fff;
+    padding: 0 2rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background-color: var(--primary);
+    box-shadow: 4px 4px 0px 0px #1a1a1a;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+    z-index: 1;
+    transform: skew(-10deg);
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
-  .cs-button-solid:hover:before {
-    width: 100%;
+  .cs-button-10 .cs-icon {
+    transition: transform 0.3s;
   }
-  .cs-button-solid:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background-color: #000;
-    height: 100%;
-    width: 0;
-    transition: width 0.3s;
+  .cs-button-10:hover {
+    background-color: #1a1a1a;
+    box-shadow: 4px 4px 0px 0px var(--primary);
+  }
+  .cs-button-10:hover .cs-icon {
+    transform: translateX(0.25rem);
   }
   .cs-hide-on-mobile {
     display: none;
@@ -458,7 +456,7 @@
   #cs-navigation .cs-li-link.cs-active:before {
     display: block;
   }
-  #cs-navigation .cs-button-solid {
+  #cs-navigation .cs-nav-button {
     display: none;
   }
   #cs-navigation:before {
@@ -1183,7 +1181,7 @@
   }
   #footer .left-section .logo {
     margin-left: 0;
-    height: 2.5rem;
+    height: 4.375rem;
     text-align: left;
   }
   #footer .left-section p {

@@ -8,9 +8,9 @@
 @media only screen and (min-width: 0rem) {
     // Dark Mode Color Scheme
     :root {
-        --dark: #082032;
-        --medium: #2c394b;
-        --accent: #334756;
+        --dark: #272727;
+        --medium: #2b4160;
+        --accent: #4a7a9f;
     }
 
     body.dark-mode {
@@ -27,6 +27,10 @@
             color: #fff;
         }
 
+        .cs-h3 {
+            color: var(--headerColorLight) !important;
+        }
+    
         // hide all light classes
         .light {
             display: none;

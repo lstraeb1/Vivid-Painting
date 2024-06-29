@@ -9,7 +9,7 @@
     #sbs-r-1892 {
       width: 100%;
       padding: var(--sectionPadding);
-      background-color: #ffffff;
+    //   background-color: #ffffff;
       display: flex;
       flex-direction: column;
       /* aligns content to the left, set to center to centrally align */
@@ -469,7 +469,7 @@
             line-height: 1.2em;
             margin: 0;
             margin-bottom: calc(16 / 16 * 1rem);
-            color: var(--headerColor);
+            color: var(--primary);
             transition: color 0.3s;
         }
 

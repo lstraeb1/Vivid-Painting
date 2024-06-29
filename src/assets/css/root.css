@@ -10,6 +10,7 @@
     --secondary: #002649;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
+    --headerColorLight: #fafbfc;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
@@ -494,12 +495,8 @@
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
   }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
   body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
+    background-color: var(--primary);
   }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background-color: var(--medium);
@@ -811,15 +808,11 @@
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
   }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
-    filter: grayscale(1) brightness(1000%);
-  }
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--primaryLight);
+    background-color: var(--primary);
   }
 }
 /*-- -------------------------- -->

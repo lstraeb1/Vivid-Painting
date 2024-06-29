@@ -13,6 +13,7 @@
         --secondary: #002649;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
+        --headerColorLight: #fafbfc;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
 
@@ -585,13 +586,9 @@
         #cs-navigation {
             background-color: var(--dark);
 
-            .cs-logo {
-                /* makes it white */
-                filter: grayscale(1) brightness(1000%);
-            }
 
             .cs-line {
-                background-color: #fff;
+                background-color: var(--primary);
             }
 
             .cs-ul-wrapper {
@@ -969,10 +966,6 @@
         #cs-navigation {
             background-color: var(--dark);
 
-            .cs-logo {
-                /* makes it turn white */
-                filter: grayscale(1) brightness(1000%);
-            }
 
             .cs-li-link {
                 color: var(--bodyTextColorWhite);
@@ -980,7 +973,7 @@
 
             .cs-li-link {
                 &:before {
-                    background-color: var(--primaryLight);
+                    background-color: var(--primary);
                 }
             }
         }

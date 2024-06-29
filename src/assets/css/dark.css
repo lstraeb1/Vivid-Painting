@@ -22,8 +22,18 @@
   body.dark-mode h6 {
     color: #fff;
   }
+  body.dark-mode #hero-1946 .cs-title {
+    /* 39px - 61px */
+    color: var(--secondary);
+  }
+  body.dark-mode #hero-1946 .cs-h3 {
+    color: var(--primary) !important;
+  }
   body.dark-mode .cs-h3 {
     color: var(--headerColorLight) !important;
+  }
+  body.dark-mode #why-choose-289 .cs-h3 {
+    color: var(--primary) !important;
   }
   body.dark-mode .light {
     display: none;

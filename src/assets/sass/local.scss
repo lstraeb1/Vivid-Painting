@@ -53,9 +53,9 @@
       width: 32.625em;
       height: 42.5em;
       box-sizing: border-box;
-      background-color: #085ba9;
+      background-color: #97f5ef;
       overflow: hidden;
-      border: 8px solid #033462;
+      border: 8px solid #97f5ef;
       border-radius: 16.25rem;
       position: absolute;
       right: 0;
@@ -165,7 +165,7 @@
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         background-color: var(--primary);
-        box-shadow: 4px 4px 0px 0px #1a1a1a;
+        box-shadow: 4px 4px 0px 0px #d2f3f1;
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
@@ -182,7 +182,7 @@
         }
     
         &:hover {
-            background-color: #1a1a1a;
+            background-color: #93ebe5;
             box-shadow: 4px 4px 0px 0px var(--primary);
     
             .cs-icon {
@@ -703,7 +703,7 @@
             align-items: center;
             border-radius: calc(4 / 16 * 1rem);
             margin: 0 auto calc(64 / 16 * 1rem);
-            background: #fff;
+            background: var(--secondary);
             max-width: calc(542 / 16 * 1rem);
             width: 100%;
             /* Prevents padding from affecting height & width */
@@ -790,7 +790,7 @@
             }
 
             .cs-item {
-                background: var(--medium);
+                background: #2b3135;
             }
 
             .cs-desc {

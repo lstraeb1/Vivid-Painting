@@ -9,9 +9,9 @@
     // Website colors
     :root {
         --primary: #1FC1B8;
-        --primaryLight: #ffd675;
-        --secondary: #002649;
-        --secondaryLight: #001f3f;
+        --primaryLight: #d2f3f1;
+        --secondary: #d2f3f1;
+        --secondaryLight: #d2f3f1;
         --headerColor: #1a1a1a;
         --headerColorLight: #fafbfc;
         --bodyTextColor: #4e4b66;
@@ -75,7 +75,7 @@
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         background-color: var(--primary);
-        box-shadow: 4px 4px 0px 0px #1a1a1a;
+        box-shadow: 4px 4px 0px 0px #d2f3f1;
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
@@ -92,7 +92,7 @@
         }
     
         &:hover {
-            background-color: #1a1a1a;
+            background-color: #d2f3f1;
             box-shadow: 4px 4px 0px 0px var(--primary);
     
             .cs-icon {
@@ -1455,7 +1455,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #footer {
-            background: #061623;
+            background: #0d1316;
         }
     }
 }
